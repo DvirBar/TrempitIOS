@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		695BEA972ADAB78B00B434B3 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA962ADAB78B00B434B3 /* Ride.swift */; };
+		695BEA992ADABB6C00B434B3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA982ADABB6C00B434B3 /* Location.swift */; };
+		695BEA9B2ADACFE900B434B3 /* RidesList-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */; };
 		69D3A9882AC848A3005FF0F2 /* TrempitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */; };
 		69D3A98A2AC848A3005FF0F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D3A9892AC848A3005FF0F2 /* ContentView.swift */; };
 		69D3A98C2AC848A5005FF0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D3A98B2AC848A5005FF0F2 /* Assets.xcassets */; };
 		69D3A98F2AC848A5005FF0F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D3A98E2AC848A5005FF0F2 /* Preview Assets.xcassets */; };
+		69D3A9992AC8F95E005FF0F2 /* RideCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D3A9982AC8F95E005FF0F2 /* RideCard.swift */; };
+		69E328982ACB80F800BD4319 /* RidesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E328972ACB80F800BD4319 /* RidesList.swift */; };
+		69E3289A2ACB8BE800BD4319 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E328992ACB8BE800BD4319 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		695BEA962ADAB78B00B434B3 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		695BEA982ADABB6C00B434B3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RidesList-ViewModel.swift"; sourceTree = "<group>"; };
 		69D3A9842AC848A3005FF0F2 /* TrempitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrempitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrempitApp.swift; sourceTree = "<group>"; };
 		69D3A9892AC848A3005FF0F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69D3A98B2AC848A5005FF0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D3A98E2AC848A5005FF0F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69D3A9982AC8F95E005FF0F2 /* RideCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCard.swift; sourceTree = "<group>"; };
+		69E328972ACB80F800BD4319 /* RidesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesList.swift; sourceTree = "<group>"; };
+		69E328992ACB8BE800BD4319 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		695BEA932ADAAEB100B434B3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		69D3A97B2AC848A3005FF0F2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +70,9 @@
 		69D3A9862AC848A3005FF0F2 /* Trempit */ = {
 			isa = PBXGroup;
 			children = (
-				69D3A9952AC8D768005FF0F2 /* app */,
+				695BEA932ADAAEB100B434B3 /* ViewModels */,
+				69E3289B2ACB8BED00BD4319 /* Models */,
+				69D3A9952AC8D768005FF0F2 /* Views */,
 				69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */,
 				69D3A9892AC848A3005FF0F2 /* ContentView.swift */,
 				69D3A98B2AC848A5005FF0F2 /* Assets.xcassets */,
@@ -68,19 +89,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		69D3A9952AC8D768005FF0F2 /* app */ = {
+		69D3A9952AC8D768005FF0F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69D3A9962AC8D780005FF0F2 /* rides */,
+				69D3A9962AC8D780005FF0F2 /* Feed */,
 			);
-			path = app;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		69D3A9962AC8D780005FF0F2 /* rides */ = {
+		69D3A9962AC8D780005FF0F2 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				69D3A9972AC8D915005FF0F2 /* RidesList */,
 			);
-			path = rides;
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		69D3A9972AC8D915005FF0F2 /* RidesList */ = {
+			isa = PBXGroup;
+			children = (
+				69D3A9982AC8F95E005FF0F2 /* RideCard.swift */,
+				69E328972ACB80F800BD4319 /* RidesList.swift */,
+				695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */,
+			);
+			path = RidesList;
+			sourceTree = "<group>";
+		};
+		69E3289B2ACB8BED00BD4319 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69E328992ACB8BE800BD4319 /* User.swift */,
+				695BEA962ADAB78B00B434B3 /* Ride.swift */,
+				695BEA982ADABB6C00B434B3 /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,11 +162,11 @@
 			};
 			buildConfigurationList = 69D3A97F2AC848A3005FF0F2 /* Build configuration list for PBXProject "TrempitIOS" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = he;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				he,
 			);
 			mainGroup = 69D3A97B2AC848A3005FF0F2;
 			productRefGroup = 69D3A9852AC848A3005FF0F2 /* Products */;
@@ -153,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695BEA9B2ADACFE900B434B3 /* RidesList-ViewModel.swift in Sources */,
 				69D3A98A2AC848A3005FF0F2 /* ContentView.swift in Sources */,
+				69D3A9992AC8F95E005FF0F2 /* RideCard.swift in Sources */,
+				69E328982ACB80F800BD4319 /* RidesList.swift in Sources */,
+				69E3289A2ACB8BE800BD4319 /* User.swift in Sources */,
 				69D3A9882AC848A3005FF0F2 /* TrempitApp.swift in Sources */,
+				695BEA972ADAB78B00B434B3 /* Ride.swift in Sources */,
+				695BEA992ADABB6C00B434B3 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

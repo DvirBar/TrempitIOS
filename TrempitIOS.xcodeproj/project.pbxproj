@@ -10,6 +10,11 @@
 		695BEA972ADAB78B00B434B3 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA962ADAB78B00B434B3 /* Ride.swift */; };
 		695BEA992ADABB6C00B434B3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA982ADABB6C00B434B3 /* Location.swift */; };
 		695BEA9B2ADACFE900B434B3 /* RidesList-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */; };
+		695BEA9E2ADB00E100B434B3 /* RideCard-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEA9D2ADB00E100B434B3 /* RideCard-ViewModel.swift */; };
+		695BEAA12ADB45A700B434B3 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEAA02ADB45A700B434B3 /* Line.swift */; };
+		695BEAA32ADB4CE200B434B3 /* RouteStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEAA22ADB4CE200B434B3 /* RouteStop.swift */; };
+		695BEAA52ADB4DBD00B434B3 /* RideProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEAA42ADB4DBD00B434B3 /* RideProperty.swift */; };
+		695BEAA82ADB73FB00B434B3 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BEAA72ADB73FB00B434B3 /* ColorExtension.swift */; };
 		69D3A9882AC848A3005FF0F2 /* TrempitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */; };
 		69D3A98A2AC848A3005FF0F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D3A9892AC848A3005FF0F2 /* ContentView.swift */; };
 		69D3A98C2AC848A5005FF0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D3A98B2AC848A5005FF0F2 /* Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		695BEA962ADAB78B00B434B3 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		695BEA982ADABB6C00B434B3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RidesList-ViewModel.swift"; sourceTree = "<group>"; };
+		695BEA9D2ADB00E100B434B3 /* RideCard-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RideCard-ViewModel.swift"; sourceTree = "<group>"; };
+		695BEAA02ADB45A700B434B3 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		695BEAA22ADB4CE200B434B3 /* RouteStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStop.swift; sourceTree = "<group>"; };
+		695BEAA42ADB4DBD00B434B3 /* RideProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideProperty.swift; sourceTree = "<group>"; };
+		695BEAA72ADB73FB00B434B3 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		69D3A9842AC848A3005FF0F2 /* TrempitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrempitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrempitApp.swift; sourceTree = "<group>"; };
 		69D3A9892AC848A3005FF0F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,11 +54,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		695BEA932ADAAEB100B434B3 /* ViewModels */ = {
+		695BEA9C2ADB004600B434B3 /* RideCard */ = {
 			isa = PBXGroup;
 			children = (
+				69D3A9982AC8F95E005FF0F2 /* RideCard.swift */,
+				695BEA9D2ADB00E100B434B3 /* RideCard-ViewModel.swift */,
+				695BEAA22ADB4CE200B434B3 /* RouteStop.swift */,
+				695BEAA42ADB4DBD00B434B3 /* RideProperty.swift */,
 			);
-			path = ViewModels;
+			path = RideCard;
+			sourceTree = "<group>";
+		};
+		695BEA9F2ADB459800B434B3 /* ViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				695BEAA02ADB45A700B434B3 /* Line.swift */,
+			);
+			path = ViewUtils;
+			sourceTree = "<group>";
+		};
+		695BEAA62ADB73E700B434B3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				695BEAA72ADB73FB00B434B3 /* ColorExtension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		69D3A97B2AC848A3005FF0F2 = {
@@ -70,7 +100,7 @@
 		69D3A9862AC848A3005FF0F2 /* Trempit */ = {
 			isa = PBXGroup;
 			children = (
-				695BEA932ADAAEB100B434B3 /* ViewModels */,
+				695BEAA62ADB73E700B434B3 /* extensions */,
 				69E3289B2ACB8BED00BD4319 /* Models */,
 				69D3A9952AC8D768005FF0F2 /* Views */,
 				69D3A9872AC848A3005FF0F2 /* TrempitApp.swift */,
@@ -92,6 +122,7 @@
 		69D3A9952AC8D768005FF0F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				695BEA9F2ADB459800B434B3 /* ViewUtils */,
 				69D3A9962AC8D780005FF0F2 /* Feed */,
 			);
 			path = Views;
@@ -108,7 +139,7 @@
 		69D3A9972AC8D915005FF0F2 /* RidesList */ = {
 			isa = PBXGroup;
 			children = (
-				69D3A9982AC8F95E005FF0F2 /* RideCard.swift */,
+				695BEA9C2ADB004600B434B3 /* RideCard */,
 				69E328972ACB80F800BD4319 /* RidesList.swift */,
 				695BEA9A2ADACFE900B434B3 /* RidesList-ViewModel.swift */,
 			);
@@ -197,12 +228,17 @@
 			files = (
 				695BEA9B2ADACFE900B434B3 /* RidesList-ViewModel.swift in Sources */,
 				69D3A98A2AC848A3005FF0F2 /* ContentView.swift in Sources */,
+				695BEA9E2ADB00E100B434B3 /* RideCard-ViewModel.swift in Sources */,
 				69D3A9992AC8F95E005FF0F2 /* RideCard.swift in Sources */,
+				695BEAA52ADB4DBD00B434B3 /* RideProperty.swift in Sources */,
 				69E328982ACB80F800BD4319 /* RidesList.swift in Sources */,
 				69E3289A2ACB8BE800BD4319 /* User.swift in Sources */,
 				69D3A9882AC848A3005FF0F2 /* TrempitApp.swift in Sources */,
 				695BEA972ADAB78B00B434B3 /* Ride.swift in Sources */,
 				695BEA992ADABB6C00B434B3 /* Location.swift in Sources */,
+				695BEAA12ADB45A700B434B3 /* Line.swift in Sources */,
+				695BEAA32ADB4CE200B434B3 /* RouteStop.swift in Sources */,
+				695BEAA82ADB73FB00B434B3 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

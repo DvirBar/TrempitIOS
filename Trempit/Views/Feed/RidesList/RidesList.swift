@@ -19,12 +19,19 @@ struct RidesList: View {
             background
                 .ignoresSafeArea()
             
+
             ScrollView(.vertical, showsIndicators: false) {
-                VStack {
+                VStack(alignment: .leading) {
                     Text("נסיעות")
                         .font(.largeTitle.bold())
-                    
-                    RideCard(profilePic: Image("profilePicDemo"))
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                VStack {
+                    ForEach(Ride.sampleData) { sampleItem in
+                        RideCard(ride: sampleItem)
+                            .padding(.bottom)
+                    }
                 }
                 .padding()
             }
